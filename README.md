@@ -15,7 +15,7 @@ how do I reset/edit my streak?  your streak is the number in counter.txt
 Mac
 open terminal
 type crontab -e
-0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * *  /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/jakehopkins/Downloads/screen_break 
+ copy in 0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * *  /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/jakehopkins/Downloads/screen_break 
 one you paste that type :qa to exit vim and save
 let it run!
 
