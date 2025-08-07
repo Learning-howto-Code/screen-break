@@ -6,12 +6,12 @@ Works on Mac, Windows and Linux, but only tested on Mac(for now)
 
 <img width="495" height="326" alt="Screen Shot 2025-08-07 at 1 41 21 PM" src="https://github.com/user-attachments/assets/55ecb5ce-05b4-461e-bcd9-1d4fcb75d7ad" />
 
-#FAQ
+##FAQ
 how do I set it up, look below
 how can I edit the activity list?   Just add or delete the lines from ideas.txt
 how do I reset/edit my streak?  your streak is the number in counter.txt
 
-#How to set up
+##How to set up
 Mac
 open terminal
 type crontab -e
