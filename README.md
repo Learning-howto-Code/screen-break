@@ -16,6 +16,6 @@ Mac
 open terminal  
 type crontab -e  
  copy in 0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * *  /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/jakehopkins/Downloads/screen_break   
-one you paste that type :qa to exit vim and save  
+once you paste that type :qa to exit vim and save  
 let it run!  
 
