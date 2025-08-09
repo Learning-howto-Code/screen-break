@@ -1,6 +1,8 @@
 # Screen-Break
 A friendly little app that reminds you to take a break every hour.
 
+Check out the video to see how it works!
+
 Built with TKinter and Python Screen Break opens a pop up window every hour with a friendly reminder to take a break, a recomendation for what to do and a streak counter.
 Works on Mac, Windows and Linux, but only tested on Mac(for now)
 
@@ -19,6 +21,8 @@ type crontab -e
 once you paste that type :qa to exit vim and save  
 let it run!  
 *You might have to give cron full disk acces, if so follow this tutorial: https://medium.com/vunamhung/granting-full-disk-access-to-cron-29d2267fbe62
+
+
 
 Made with :3 by Jake for Reality, a Hackclub YSWS
 
