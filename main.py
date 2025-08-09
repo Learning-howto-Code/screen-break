@@ -4,18 +4,20 @@ import tkinter as tk
 import time
 import webbrowser
 
+folder_path="/Users/jakehopkins/Downloads/screen_break"
+
 window = tk.Tk()
 
 #updates #completed counter
 def read_counter(): # gets number fromt txt file as var
-    with open("counter.txt") as f: #reads counter.txt
+    with open(f"{folder_path}/counter.txt") as f: #reads counter.txt
         counter = int(f.read()) #converts to int
         print(counter)
         return counter
 counter=read_counter()
 def update_counter(): #adds onto var
     counter = read_counter()
-    with open("counter.txt", "w") as f:
+    with open(f"{folder_path}/counter.txt", "w") as f:
         counter+= 1
         f.write(str(counter)) # adds one to counter, then converts to str
     print("clicked")
@@ -27,13 +29,12 @@ def delete_window():# becuase buttons can only call funtions
     time.sleep(.3)
     window.destroy()
 def ideas(): #returns the idea nuber in the list that corsponds to the number in ideas number.txt
-   
-   with open("ideas.txt") as f: #reads ideas.txt 
+   with open(f"{folder_path}/ideas.txt") as f: #reads ideas.txt 
     ideas = f.readlines()
     num_lines=len(ideas)
-    with open("idea#.txt") as f: # reads ideas to figure out where we left off
+    with open(f"{folder_path}/idea#.txt") as f: # reads ideas to figure out where we left off
      number = int(f.read().strip())
-    with open("idea#.txt", "w") as f:
+    with open(f"{folder_path}/idea#.txt", "w") as f:
         number+= 1
         if number>=num_lines:
            number=0

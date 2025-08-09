@@ -1,4 +1,4 @@
-# screen-break
+# Screen-Break
 A friendly little app that reminds you to take a break every hour.
 
 Built with TKinter and Python Screen Break opens a pop up window every hour with a friendly reminder to take a break, a recomendation for what to do and a streak counter.
@@ -15,8 +15,11 @@ how do I reset/edit my streak?  your streak is the number in counter.txt
 Mac
 open terminal  
 type crontab -e  
- copy in 0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * *  /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 /Users/jakehopkins/Downloads/screen_break   
+ copy in 0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * * python /Users/jakehopkins/Downloads/screen_break/test.py  
 once you paste that type :qa to exit vim and save  
 let it run!  
+*You might have to give cron full disk acces, if so follow this tutorial: https://medium.com/vunamhung/granting-full-disk-access-to-cron-29d2267fbe62
 
 Made with :3 by Jake for Reality, a Hackclub YSWS
+
+
