@@ -24,9 +24,13 @@ def update_counter(): #adds onto var
     completed.config(state="disabled") #disables button for 2 seconds to prevent spammming
     window.after(5000, lambda: completed.config(state="normal"))
     time.sleep(.3)
-    window.destroy()
+    with open(f"{folder_path}/if_open.txt", "w") as f:
+       f.write("closed") #logs if user interacts with GUI
+    window.destroy() #closes pop-up
 def delete_window():# becuase buttons can only call funtions
     time.sleep(.3)
+    with open(f"{folder_path}/if_open.txt", "w") as f:
+       f.write("closed")
     window.destroy()
 def ideas(): #returns the idea nuber in the list that corsponds to the number in ideas number.txt
    with open(f"{folder_path}/ideas.txt") as f: #reads ideas.txt 
@@ -100,7 +104,16 @@ window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 window.resizable(False, False)
 window.configure(bg="#2E3440")
 window.title("Screen Break")
-window.mainloop()
+
+with open(f"{folder_path}/if_open.txt", "r") as f:
+       status = str(f.read()) #gets status of if last time script ran the window was closed
+if status == "closed": #if it was closed it runs it agian
+    with open(f"{folder_path}/if_open.txt", "w") as f:
+        f.write("open") 
+    window.mainloop()
+        
+        
+
 
 
 
