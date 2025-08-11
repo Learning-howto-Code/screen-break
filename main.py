@@ -107,7 +107,7 @@ window.title("Screen Break")
 
 with open(f"{folder_path}/if_open.txt", "r") as f:
        status = str(f.read()) #gets status of if last time script ran the window was closed
-if status == "closed": #if it was closed it runs it agian
+if status == "closed" or "": #if it was closed it runs it agian
     with open(f"{folder_path}/if_open.txt", "w") as f:
         f.write("open") 
     window.mainloop()
