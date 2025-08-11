@@ -3,6 +3,9 @@ A friendly little app that reminds you to take a break every hour.
 
 Check out the video to see how it works!
 
+https://github.com/user-attachments/assets/a0327dde-1e3e-45b6-9c88-191094089697
+
+
 Built with TKinter and Python Screen Break opens a pop up window every hour with a friendly reminder to take a break, a recomendation for what to do and a streak counter.
 Works on Mac, Windows and Linux, but only tested on Mac(for now)
 
