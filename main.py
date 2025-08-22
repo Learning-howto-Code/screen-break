@@ -112,7 +112,7 @@ if status == "closed" or "": #if it was closed it runs it agian
         f.write("open") 
     window.mainloop()
         
-        
+# window.mainloop()    
 
 
 

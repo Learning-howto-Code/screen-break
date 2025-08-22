@@ -7,7 +7,7 @@
     "python.analysis.extraPaths": [
         "",
         "/Users/jakehopkins/.vscode/extensions/joedevivo.vscode-circuitpython-0.1.20-darwin-x64/stubs",
-        "/Users/jakehopkins/Library/Application Support/Code/User/globalStorage/joedevivo.vscode-circuitpython/bundle/20250807/adafruit-circuitpython-bundle-py-20250807/lib"
+        "/Users/jakehopkins/Library/Application Support/Code/User/globalStorage/joedevivo.vscode-circuitpython/bundle/20250810/adafruit-circuitpython-bundle-py-20250810/lib"
     ],
     "circuitpython.board.version": null,
     "git.ignoreLimitWarning": true
