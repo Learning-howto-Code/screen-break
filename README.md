@@ -23,7 +23,8 @@ type crontab -e
  copy in 0 * * * * "put path to python here" "put path to folder here", like this: 0 * * * * python /Users/jakehopkins/Downloads/screen_break/test.py  
 once you paste that type :qa to exit vim and save  
 let it run!  
-*You might have to give cron full disk acces, if so follow this tutorial: https://medium.com/vunamhung/granting-full-disk-access-to-cron-29d2267fbe62
+for example mine looks like this 0 * * * * /opt/miniconda3/bin/python /Users/jakehopkins/Downloads/screen_break/main.py
+*You might have to give cron full disk access, if so follow this tutorial: https://medium.com/vunamhung/granting-full-disk-access-to-cron-29d2267fbe62
 
 
 
